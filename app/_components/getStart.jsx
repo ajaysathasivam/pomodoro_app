@@ -1,8 +1,9 @@
-import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        height:"100vh",
+        height: "100vh",
         backgroundColor: '#f5f6fa',
     },
     content: {
@@ -47,31 +48,30 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function GetStartedScreen({ navigation }) {
+export default function GetStartedScreen({ }) {
     const handleGetStarted = () => {
         alert()
         // Navigate to another screen, e.g., Home
-        if (navigation) {
-            navigation.navigate('Home'); // Or use router.push('/home') with Expo Router
-        }
+
     };
 
+
     return (
-        <SafeAreaView style={styles.container}>
-            <View style={styles.content}>
-                <Image
-                    style={styles.image}
-                    resizeMode="contain"
-                />
 
-                <Text style={styles.title}>Welcome to Clock App</Text>
-                <Text style={styles.subtitle}>Track time with simplicity</Text>
+        <View >
+            <Image
+                style={styles.image}
+                resizeMode="contain"
+            />
 
-                <TouchableOpacity style={styles.button} onPress={handleGetStarted}>
-                    <Text style={styles.buttonText}>Get Started</Text>
-                </TouchableOpacity>
-            </View>
-        </SafeAreaView>
+            <Text style={styles.title}>Welcome to Clock App</Text>
+            <Text style={styles.subtitle}>Track time with simplicity</Text>
+
+            <TouchableOpacity style={styles.button} onPress={handleGetStarted}>
+                <Text style={styles.buttonText}>Get Started</Text>
+            </TouchableOpacity>
+        </View>
+
     );
 }
 
