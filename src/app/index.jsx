@@ -54,6 +54,7 @@ export default function GetStartedScreen({ }) {
             <Text style={styles.title}>Welcome to Clock App</Text>
             <Text style={styles.subtitle}>Track time with simplicity</Text>
             <Link style={{ ...styles.button, ...styles.buttonText }} href={{ pathname: 'clockScreen', params: { name: 'Bacon' } }}>Get Started</Link>
+            <Link style={{ ...styles.button, ...styles.buttonText }} href={{ pathname: 'TestScreen' }}>Test</Link>
         </View>
     );
 }

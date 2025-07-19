@@ -1,5 +1,5 @@
-import { Link } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
+import PracticeComponent from './_components/Practice';
 
 const styles = StyleSheet.create({
     container: {
@@ -60,8 +60,9 @@ export default function GetStartedScreen({ }) {
     return (
         <View style={styles.content} >
             <Text style={styles.title}>Welcome to Clock App</Text>
-            <Text style={styles.subtitle}>Track time with simplicity</Text>
-            <Link style={{ ...styles.button, ...styles.buttonText }} href={{ pathname: 'clockScreen', params: { name: 'Bacon' } }}>Get Started</Link>
+            <Text style={styles.subtitle}>Track time with simplicity </Text>
+            <PracticeComponent/>
+            {/* <Link style={{ ...styles.button, ...styles.buttonText }} href={{ pathname: 'clockScreen', params: { name: 'Bacon' } }}>Get Started</Link> */}
         </View>
     );
 }

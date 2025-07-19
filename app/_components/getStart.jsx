@@ -65,7 +65,7 @@ export default function GetStartedScreen({ }) {
             />
 
             <Text style={styles.title}>Welcome to Clock App</Text>
-            <Text style={styles.subtitle}>Track time with simplicity</Text>
+            <Text style={styles.subtitle}>Track time with simplicity1</Text>
 
             <TouchableOpacity style={styles.button} onPress={handleGetStarted}>
                 <Text style={styles.buttonText}>Get Started</Text>
